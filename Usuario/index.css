@@ -1,0 +1,305 @@
+/*
+	Paleta de Colores
+		Azules
+		7194AB
+		46728E
+		2B5876
+		174461
+		062C45
+		2456BD
+		Morados
+
+*/
+
+/* Gradientes
+	 background: linear-gradient(90deg, #2193b0 , #53BED7);
+	 background: linear-gradient(90deg, #cc2b5e, #753a88);
+	 background: linear-gradient(90deg, #9197A2, #2c3e50);
+	 mc background: linear-gradient(90deg, #42275a, #734b6d);
+	 background: linear-gradient(90deg, #97c93e, #2EAB11);
+	 Cool background: linear-gradient(90deg, #614385, #516395);
+	 background: linear-gradient(90deg, #02aab0, #00cdac);
+	 background: linear-gradient(90deg, #000428 , #004e92);
+	 bc background: linear-gradient(90deg, #43cea2, #185a9d);
+	 col background: linear-gradient(90deg, #4568dc , #b06ab3);
+	 background: linear-gradient(90deg, #ffd89b, #19547b);
+	 background: linear-gradient(90deg, #141e30  , #243b55 );
+	 cool background: linear-gradient(90deg, #2b5876   , #4e4376 );
+*/
+/* Defino todo el estilo de la barra de navegación, donde preciso:
+ 	Un degradado como color de fondo
+ 	El título de la empresa con su respectivo logo, su color y tamaño de letra
+ 	Los items de la bbara de navegación, su color y tamaño de letra
+ 	El hover de los dos elementos previos, es decir, el estilo que tomaran cuando se pase el mouse sobre ellos.
+ 	Distancia entre elementos de la barra de navegación.
+*/
+/* -------------NAVBAR----------------- */
+  .navbar {
+  	background: transparent !important;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    max-width: 100vw !important;
+    max-height: 10vh;
+    margin: 0 5vw;
+    padding: 0;
+  }
+  #a_tag_nav_brand {
+  	font-size: 4.5vh;
+  	margin: 0;
+  	color: #FFBD57;
+  }
+  #a_tag_nav_brand:hover {
+  	color: #000;
+  }
+  #a_tag_nav_brand img{
+    height: 9vh;
+    width: auto;
+  }
+  #a_tag_nav {
+  	font-size: 3vh;
+  	color: black;
+  }
+  #a_tag_nav:hover {
+  	color: black;
+  }
+  #a_tag_nav {
+      margin-left: 2vw;
+  }
+  .nav-item {
+      background-color: rgba(255,165,0, 0.9)!important;
+  }
+  .navbar-toggler {
+    margin: 0;
+    border-color: #DE7208 !important;
+
+  }
+  .fas {
+    color: #00000 ;
+  }
+  .fa-bars {
+    font-size: 2rem;
+    opacity: 0.8;
+    color: #DE7208;
+  }
+  #a_tag_nav {
+    text-align: left;
+  }
+.nav-item {
+  background-color: white;
+}
+
+/* -------------HOME----------------- */
+
+/* -------------HOME----------------- */
+
+  #home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  #home .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 5vw;
+    padding: 0;
+    /* padding-bottom: 15vh; */
+    color: white;
+  }
+
+  .currentinfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .currentinfo h1{
+    font-size: 9vh;
+  }
+  .generalinfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .temp {
+    margin-top: 4vh;
+    border-color: white;
+    border-bottom-style: dotted;
+  }
+  .maxmin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .winfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topmap {
+    font-size: 8vw;
+    border-color: white;
+    border-bottom-style: dotted;
+  }
+
+  .tabla {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%
+  }
+  .tablaizq {
+    display: flex;
+    align-items: center;
+    font-size: 13vw;
+  }
+  .tablader {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 3vw;
+  }
+  .fab-tder {
+    color: 10vw;
+  }
+
+
+  .home-important-info {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 10vh;
+    max-height: 85%;
+  }
+
+
+
+/* Defino los estilos del Carousel, donde preciso:
+	Color naranja para los indicadores y controladores de elemento desplegado por el Carousel.
+	El tamaño de las imágenes y que estas se escalen al tamaño de pantalla.
+	El tamaño y color de letra de los párrafos y títulos presentes
+*/
+
+.carousel-indicators li {
+	background-color: orange;
+}
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFA500' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFA500' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-inner h5 {
+	font-size: 5vw;
+	color: white;
+}
+.carousel-inner p {
+	font-size: 2vw;
+	color: black;
+	font-weight: bold;
+}
+.carousel-item img {
+	width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+
+
+
+
+  .mapa {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 7% 5% 7%;
+
+  }
+  .mapahijo {
+
+      width: inherit;
+      height: inherit;
+
+  }
+  .mapa img {
+    width: inherit;
+    height: inherit;
+  }
+  #home {
+    position: relative;
+  }
+
+
+/* Defino los estilos del Carousel, donde preciso:
+	Color naranja para los indicadores y controladores de elemento desplegado por el Carousel.
+	El tamaño de las imágenes y que estas se escalen al tamaño de pantalla.
+	El tamaño y color de letra de los párrafos y títulos presentes
+*/
+
+.carousel-indicators li {
+	background-color: orange;
+}
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFA500' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFA500' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-inner h5 {
+	font-size: 5vw;
+	color: white;
+}
+.carousel-inner p {
+	font-size: 2vw;
+	color: black;
+	font-weight: bold;
+}
+.carousel-item img {
+	width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* En la sección del Footer defino:
+	El gradiente puesto como fondo.
+	El color y tamaño de los logos puestos.
+	El comportamiento al pasar el mouse sobre los logos, donde estos cambian de color.
+*/
+footer {
+	background: linear-gradient(90deg, #614385, #516395);
+}
+.contact-content {
+  color: white;
+  font-size: 5vh;
+  text-align: center;
+}
+.social-link {
+	color: orange;
+	font-size: 5vh;
+}
+.contact-logo {
+	text-align: center;
+}
+.fab-footer:hover {
+	color: white;
+}

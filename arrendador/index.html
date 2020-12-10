@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Se define diferentes elementos requeridos, como lo son:
+        Meta datos relativos al lenguaje de cifrado
+        Se implementa Bootstrap y fontawesome
+        Se define el favicon de la página
+        Se llama al archivo .css
+        Se define el Título que aparecería en una pestaña de navegación
+    -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../imagenes/logo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6c7ca290de.js"></script>
+
+    <title>Arrendador</title>
+  </head>
+
+  <body>
+    <!-- ***NAVBAR*** -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="header">
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span> <i class="fas fa-bars"></i> </span>
+      </button>
+      <a id="a_tag_nav_brand" class="navbar-brand" href="#">
+        <img src="../imagenes/lg.png" alt=""> EasyPark
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+              <a id="a_tag_nav" class="nav-link" href="#" data-toggle="modal" data-target="#modalUser"> <i class="fas fa-portrait"></i> Nicole_Venachi<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#" data-toggle="modal" data-target="#modalPlazas"> <i class="fas fa-map-marked-alt"></i> My places </a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#" data-toggle="modal" data-target="#modalHistory"> <i class="fas fa-history"></i> History </a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#"> <i class="fas fa-shield-alt"></i> Security && Protection </a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#"> <i class="fas fa-cogs"></i> Configuration </a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#"> <i class="fas fa-comment-dots"></i> Support </a>
+          </li>
+          <li class="nav-item">
+            <a id="a_tag_nav" class="nav-link" href="#"> <i class="fas fa-question-circle"></i> Help </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span> <i class="fas fa-bars"></i> </span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../imagenes/lg.png" alt=""> EasyPark
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="far fa-map"></i> Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fas fa-user-tie"></i> Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!--***/NAVBAR*** -->
+
+
+    <!-- ***MAPS*** -->
+    <section id="maps">
+      <div class="mapa" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.1054123430804!2d-76.60269971687376!3d2.4368383246800462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300303f78c3c6f%3A0x9d844246cab80e82!2sCl.%209e%20%232-10%2C%20Popay%C3%A1n%2C%20Cauca!5e0!3m2!1ses!2sco!4v1585063642396!5m2!1ses!2sco" width="360" height="640" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  
+      </div>
+    </section>
+    <!--***/MAPS*** -->
+
+
+
+    <!-- ***Modal*** -->
+        <div class="modal fade" id="modalUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">User information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form >
+                    <div class="form-row">
+                      <div class="form-group col">
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">User</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="@Nicole_Venachi" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col">
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Type</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Admin" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col">
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">ID</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="1061707070" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--***/Modal*** -->
+
+    <!-- ***Modal*** -->
+        <div class="modal fade" id="modalPlazas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Available Places</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                  <h1>1st Place</h1>
+                  <form >
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Name</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Santa Inés" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Parking Slots</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="#3" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Latitude</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="2.45" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Longitude</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="-76.54" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--***/Modal*** -->
+
+    <!-- ***Modal*** -->
+        <div class="modal fade" id="modalHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">History</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-success" role="alert">
+                  <h1>Order #128912</h1>
+                  <form >
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Date</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="21/03/2020" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Hour</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="11:56pm GMT-5" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Place Used</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Santa Inés" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Slot Used</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="#1" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Time Used</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="2.01 Hours" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col">
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Earned Money</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="$1.7 USD" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--***/Modal*** -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
